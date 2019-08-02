@@ -6,17 +6,7 @@ import Inventory from "./components/Inventory";
 import Wizard from "./components/Wizard";
 
 class App extends Component {
-  state={
-    inventory:[]
-  }
-
-  componentDidMount(){
-    axios.get('/api/inventory').then( res => {
-      this.setState({
-        inventory: res.data
-      })
-    })
-  }
+ 
 
   render() {
     return (
@@ -26,7 +16,7 @@ class App extends Component {
       </header>
       <main>
        <Switch>
-         <Route exact path="/" component={() => <Inventory inventory={this.state.inventory}/>}/>
+         <Route exact path="/" component={Inventory}/>
          <Route path="/wizard" component={Wizard}/>
        </Switch>
       </main>

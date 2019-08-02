@@ -7,7 +7,7 @@ class Wizard extends Component {
 render() {
     return (
         <div className="Wizard">
-            <h1>Wizard</h1>
+            <h1>Add Inventory</h1>
             <Switch>
                 <Route path="/wizard/step1" component={StepOne}/>
                 <Route path="/wizard/step2" component={StepTwo}/>

@@ -18,7 +18,9 @@ class Inventory extends Component {
   render() {
     return (
       <div className="Inventory">
-        <h1>Inventory</h1>
+        <div className="inv-header">
+          <h1>Inventory</h1>
+        </div>
         <table>
           <tr>
             <th>Item Name</th>

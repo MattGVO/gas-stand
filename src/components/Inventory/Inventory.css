@@ -14,7 +14,7 @@ table{
     margin: 0;
     width: 80vw;
     background: #e6e6e6;
-    height: 50vh;
+    max-height: 50vh;
     overflow-y: scroll;
     border-collapse: collapse
 }
@@ -22,6 +22,7 @@ td, th {
     border: 1px solid rgb(150,150,150);
     text-align: left;
     padding: 8px;
+    width: 25%;
   }
 
 tr:nth-child(even) {

@@ -1,10 +1,13 @@
-.App{
+@import url("https://fonts.googleapis.com/css?family=Damion");
+
+.App {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-header{
+header {
+  font-family: "Damion", cursive;
   display: flex;
   justify-content: space-between;
   color: greenyellow;
@@ -14,8 +17,13 @@ header{
   border-bottom: solid 10px orange;
 }
 
-main{
+
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+button{
+  width: 100px;
 }

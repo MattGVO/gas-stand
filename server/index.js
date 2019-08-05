@@ -19,4 +19,4 @@ massive(CONNECTION_STRING).then( db =>{
 
 app.get('/api/inventory', inventoryCtrl.getInventory)
 app.post('/api/inventory', inventoryCtrl.addInventory)
-app.delete('/api/inventory', inventoryCtrl.sellInventory)
+app.delete('/api/inventory/:id', inventoryCtrl.sellInventory)

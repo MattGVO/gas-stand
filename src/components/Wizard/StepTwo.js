@@ -11,7 +11,7 @@ class StepTwo extends Component {
 
   handleChange = e => {
     this.setState({
-      [e.target.name]: e.target.value
+      [e.target.name]: +e.target.value
     });
   };
 
@@ -32,14 +32,14 @@ class StepTwo extends Component {
           Quantity:{" "}
         </span>
           <input
-            onClick={e => this.handleChange(e)}
+            onChange={e => this.handleChange(e)}
             name="quantity"
           />
         <span>
           Price:{" "}
         </span>
           <input
-            onClick={e => this.handleChange(e)}
+            onChange={e => this.handleChange(e)}
             name="price"
           />
         <div className="buttons">

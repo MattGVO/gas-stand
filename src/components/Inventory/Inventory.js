@@ -15,6 +15,15 @@ class Inventory extends Component {
       });
     });
   }
+
+  sellInventory = id =>{
+    axios.delete(`/api/inventory/${id}`)
+      .then(res =>{
+        this.setState({
+          inventory: res.data
+        })
+      })
+  }
   render() {
     return (
       <div className="Inventory">
@@ -22,6 +31,8 @@ class Inventory extends Component {
           <h1>Inventory</h1>
         </div>
         <table>
+          <tbody>
+
           <tr>
             <th>Item Name</th>
             <th>Category</th>
@@ -34,14 +45,15 @@ class Inventory extends Component {
             price = `${price.slice(0,price.length -2)}.${price.slice(price.length -2)}`
            
             return (
-              <tr>
+              <tr key={item.id}>
                 <td>{item.item_name}</td>
                 <td>{item.category}</td>
                 <td>{item.quantity}</td>
-                <td>$ {price}</td>
+                <td>$ {price} <button onClick={() => this.sellInventory(item.id)}>Sell</button></td>
               </tr>
             );
           })}
+          </tbody>
         </table>
         <Link to="/wizard/step1">
           <button>Add Item</button>

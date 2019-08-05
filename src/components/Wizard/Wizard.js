@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import StepOne from "./StepOne"
 import StepTwo from './StepTwo';
+import './Wizard.css'
 
 class Wizard extends Component {
 render() {

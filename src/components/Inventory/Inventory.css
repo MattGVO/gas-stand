@@ -1,0 +1,20 @@
+.Inventory{
+    width: 80%;
+}
+
+table{
+    width: 80vw;
+    background: #e6e6e6;
+    height: 50vh;
+    overflow-y: scroll;
+    border-collapse: collapse
+}
+td, th {
+    border: 1px solid rgb(150,150,150);
+    text-align: left;
+    padding: 8px;
+  }
+
+tr:nth-child(even) {
+    background-color: #c3c3c3;
+  }

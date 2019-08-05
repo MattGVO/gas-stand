@@ -1,0 +1,21 @@
+.wiz-container{
+    background: blue;
+    height: 30vh;
+    width: 30vh;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 16px;
+    border: 10px solid green;
+    box-shadow: 0 0 0 10px orange;
+}
+.wiz-container h1{
+    margin: 0;
+    text-align: center;
+    text-decoration: underline;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}

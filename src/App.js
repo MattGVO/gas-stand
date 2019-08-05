@@ -1,18 +1,17 @@
 import React, { Component } from "react";
 import { Switch, Route } from 'react-router-dom'
-import axios from 'axios'
 import "./App.css";
-import Inventory from "./components/Inventory";
-import Wizard from "./components/Wizard";
+import Inventory from "./components/Inventory/Inventory";
+import Wizard from "./components/Wizard/Wizard";
 
 class App extends Component {
- 
-
   render() {
     return (
     <div className="App">
       <header>
+        <div className="Check"></div>
         <h1>THE GAS STAND CONVENIENCE STORE</h1>
+        <div className="Check"></div>
       </header>
       <main>
        <Switch>
